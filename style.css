@@ -1003,4 +1003,19 @@
  
 
 
+/* Gallery-section */
+.gallery-acrd{
 
+}
+.gallery-acrd img{
+ /* border-radius: 10px; */
+    max-width: 100%;
+    height: auto;
+    display: block;
+    height: 270px;
+}
+
+.img-gallery {
+    border-radius: 0.5rem 0.5rem 0 0;
+    /* border-top-left-radius: 2px; */
+}
