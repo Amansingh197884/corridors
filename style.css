@@ -34,7 +34,10 @@
 
 
 
+h1,h2,h3,input,span{
+         font-family: "Cinzel", serif !important;
 
+}
  *,
  *::before,
  *::after {
@@ -66,59 +69,31 @@
      cursor: pointer;
  }
 
- address {
-     font-style: normal;
- }
-
- ion-icon {
-     pointer-events: none;
- }
 
  html {
-     font-family: var(--ff-nunito-sans);
      scroll-behavior: smooth;
  }
 
  body {
      background: var(--cultured-2) !important;
      overflow-x: hidden;
+                 font-family: 'Montserrat', sans-serif;
+
  }
 
- ::-webkit-scrollbar {
-     width: 10px;
-     height: 8px;
- }
-
- ::-webkit-scrollbar-track {
-     background: var(--white);
- }
-
- ::-webkit-scrollbar-thumb {
-     background: var(--cadet);
-     border-left: 2px solid var(--white);
- }
-
-
- @import url('https://fonts.googleapis.com/css2?family=Alyamama:wght@300..900&family=Cinzel:wght@400..900&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Quicksand:wght@300..700&family=Vollkorn:ital,wght@0,400..900;1,400..900&display=swap');
 
 
 
  body {
      margin: 0;
      background-color: #fff;
-     /* font-family: "Quicksand", sans-serif !important; */
-     /* font-family: "Lobster Two", sans-serif !important; */
-
-     /* font-family: "Alyamama", serif !important; */
-
-     font-family: "Cinzel", serif !important;
+    
 
 
  }
 
  h1,
  .navbar-brand {
-     /* font-family: 'Playfair Display', serif; */
      letter-spacing: 2px;
  }
 
@@ -143,12 +118,28 @@
 
 
  }
+  .navbar.scrolled .navbar-brand,
+ .navbar.scrolled .nav-link:hover {
+     color: var(--orange-soda) !important;
+     font-weight: 500;
 
 
- .navbar-brand {
-     font-weight: 600;
-     color: var(--text-dark) !important;
  }
+ @media (max-width: 991px) {
+    .banner-sectionn .content-hero p, h1 {
+        text-align: start !important;
+        padding-left: 10px;
+    }
+    .content-hero a{
+        display: none;
+    }
+    #navbarNav{
+        background-color: #fff;
+        color: #000;
+    }
+
+ }
+
 
  .nav-link {
      color: #fff !important;
@@ -157,13 +148,13 @@
      letter-spacing: 1.5px;
      margin-left: 25px;
      transition: 0.3s;
+     
  }
 
  .nav-link:hover {
-     color: var(--accent-brown) !important;
+     color: var(--orange-soda) !important;
  }
 
- /* hero section css  */
  :root {
      --transition-speed: 0.8s;
  }
@@ -216,7 +207,6 @@
      left: 0;
      width: 100%;
      height: 100%;
-     /* background: rgba(0, 0, 0, 0.4); */
      z-index: 1;
 
  }
@@ -239,7 +229,6 @@
      pointer-events: auto;
  }
 
- /* Amenities Styling */
  .banner-sectionn .amenities-list {
      list-style: none;
      padding: 0;
@@ -258,7 +247,6 @@
      align-items: center;
  }
 
- /* Form Styling */
  .banner-sectionn .form-card {
      background: var(--glass-bg);
      backdrop-filter: blur(15px);
@@ -322,7 +310,6 @@
 
 
 
- /* Responsive Breakpoints */
  @media (max-width: 991px) {
      .banner-sectionn {
          height: auto;
@@ -337,7 +324,6 @@
 
      .banner-sectionn .mySwiperban {
          position: fixed;
-         /* Keep background fixed while scrolling content on mobile */
      }
 
      .banner-sectionn .hero-content h1,
@@ -355,7 +341,6 @@
      }
  }
 
- /* Swiper Pagination Style */
  .banner-sectionn .swiper-pagination-bullet {
      background: #fff !important;
      opacity: 0.7;
@@ -367,7 +352,6 @@
      border-radius: 5px;
  }
 
- /* Content & Amenities */
  .hero-content {
      position: relative;
      z-index: 10;
@@ -392,14 +376,13 @@
      align-items: center;
  }
 
- /* Right Form Styling */
  .form-card {
      background: var(--green-color);
      padding: 35px;
      border-radius: 15px 50px;
      border: 1px solid rgba(255, 255, 255, 0.15);
      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
-     max-width: 420px;
+     max-width: 600px;
      margin: 0 auto;
  }
 
@@ -452,7 +435,6 @@
      transform: translateY(-2px);
  }
 
- /* Responsiveness Fine-Tuning */
  @media (max-width: 991px) {
      .hero-section {
          text-align: center;
@@ -478,14 +460,16 @@
 
  /* css start  */
  .price-tag {
-     font-size: 1.5rem;
-     color: var(--orange-soda);
-     background: rgba(255, 255, 255, 0.1);
-     display: inline-block;
-     padding: 5px 15px;
-     border-radius: 5px;
-     font-weight: bold;
-     /* margin-top: 15px; */
+      background: rgba(255, 87, 34, 0.15);
+            border-left: 4px solid var(--orange-soda);
+            padding: 12px 20px;
+            display: inline-block;
+            backdrop-filter: blur(5px);
+            font-size: 16px;
+ }
+ .content-hero p{
+    font-size: 20px;
+
  }
 
  .section-al {
@@ -549,11 +533,11 @@
  }
 
  .about-item-text {
-     font-size: 20px;
+     font-size: 16px;
  }
 
  .about-item-icon img {
-     width: 35px;
+     width: 30px;
  }
 
  .custom-btn {
@@ -645,9 +629,9 @@
  }
 
  .about-text {
-     color: #a39f9f;
-     line-height: 28px;
-     font-size: 20px;
+     color: #000000;
+     line-height:30px;
+     font-size: 16px;
  }
 
  /* Amenties css  */
@@ -738,7 +722,7 @@
 
  /* highlight css          */
  .luxury-section .highlight-list img {
-     width: 30px;
+     width: 25px;
      margin-right: 10px;
 
  }
@@ -804,7 +788,8 @@
  }
 
  .luxury-section .feature-item span {
-     font-size: 20px;
+     font-size: 16px;
+     color: #434242;
  }
 
  .luxury-section .feature-item:hover {
